@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px) and (min-width: 295px)  {
+
+    footer {
+        margin-top: 15PX;
+        font-size: 28PX;
+    }
+
+    .textArea {
+        width: 280px;
+    }
+
+    .nombreOculto{
+        font-size: 28px;
+        margin-bottom: -50px;
+    }
+}

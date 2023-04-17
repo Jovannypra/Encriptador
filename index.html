@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/stylus.css">
+    <link rel="stylesheet" href="./Css/texto.css">
+    <link rel="stylesheet" href="./Css/botones.css">
+    <link rel="stylesheet" href="./Css/querry.css">
+    <script src="./js/encriptador.js"> </script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div id="Ojo1" class="ojo_1 left">
+                <img class="pupila_1" src="./img/pupila.png" alt="">
+            </div>
+
+            <div id="Ojo2" class="ojo_2 right">
+                <img class="pupila_2" src="./img/pupila 2.png" alt="">
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="seccion-1">
+            <div>
+                <h2 class="nombreOculto  focus-in-contract-bck">Encriptador</h2>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="areaTexto">
+                <div><input placeholder="Ingresa tu texto aqui" type="text" id="textoEncriptado" class="input "
+                        required></div>
+
+                <div>
+                    <textarea class="textArea vibrate-3" id="textoDesencriptado" name="resultado" rows="10" cols="50"
+                        required autofocus>
+
+                    </textarea>
+                </div>
+            </div>
+        </section>
+
+
+        
+      
+
+        <section>
+            <div class="boton">
+                <button class="botones flicker-1" type="button" id="botonEncriptado">
+                    Encriptar
+                </button>
+                <button class="botones flicker-1" type="button" id="botonDesencriptado">
+                    Desencriptar
+                </button>
+            </div>
+
+
+            <div class="boton-oculto">
+                <div class="boton-hijo-oculto">
+                    <button class="botones heartbeat" type="button" id="botonCopiar">
+                        Copiar
+                    </button>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p class="footer ping"> &#169 By: Jovanny Prado </p>
+
+    </footer>
+
+
+</body>
+
+
+<script type="text/javascript">
+    EYES.follow('Ojo1');
+    EYES.follow('Ojo2');
+
+    /* anexando y enlazando boton */
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    //boton 2
+
+    var btn = document.querySelector("#botonDesencriptado");
+    btn.onclick = desencriptar;
+
+    //boton 3 copiar
+    var btn = document.querySelector("#botonCopiar");
+    btn.onclick = copiar;
+</script>
+
+
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+
+.nombreOculto {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 60px;
+}
+
+.nombreOculto {
+    opacity: 0;
+    color:red
+
+}
+
+
+.focus-in-contract-bck:hover{animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}
+}
+
+
+
